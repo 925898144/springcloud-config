@@ -4,3 +4,18 @@ eureka:
   client:
     service-url:
       defaultZone: http://cloud.eureka.server1.com:7001/eureka/,http://cloud.eureka.server2.com:7002/eureka/,http://cloud.eureka.server3.com:7003/eureka/
+spring:
+    profiles:
+      active: dev
+---
+eureka:
+  client:
+    service-url:
+      defaultZone: http://cloud.eureka.server1.com:7001/eureka/,http://cloud.eureka.server2.com:7002/eureka/,http://cloud.eureka.server3.com:7003/eureka/
+---
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://cloud.eureka.server1.com:7001/eureka/,http://cloud.eureka.server2.com:7002/eureka/,http://cloud.eureka.server3.com:7003/eureka/
+  
